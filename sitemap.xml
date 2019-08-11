@@ -3,100 +3,100 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://boluihv.github.io/blog/migrate-from-jekyll/</loc>
+    <loc>http://tweettir.com/blog/migrate-from-jekyll/</loc>
     <lastmod>2015-10-10T13:07:31+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://boluihv.github.io/blog/hugo-is-for-lovers/</loc>
+    <loc>http://tweettir.com/blog/hugo-is-for-lovers/</loc>
     <lastmod>2015-08-03T13:39:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://boluihv.github.io/blog/creating-a-new-theme/</loc>
+    <loc>http://tweettir.com/blog/creating-a-new-theme/</loc>
     <lastmod>2015-06-24T13:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://boluihv.github.io/blog/</loc>
+    <loc>http://tweettir.com/blog/</loc>
     <lastmod>2015-10-10T13:07:31+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://boluihv.github.io/categories/</loc>
+    <loc>http://tweettir.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://boluihv.github.io/contact/</loc>
+    <loc>http://tweettir.com/contact/</loc>
   </url>
   
   <url>
-    <loc>https://boluihv.github.io/tags/golang/</loc>
+    <loc>http://tweettir.com/tags/golang/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://boluihv.github.io/blog/installation/</loc>
+    <loc>http://tweettir.com/blog/installation/</loc>
   </url>
   
   <url>
-    <loc>https://boluihv.github.io/tags/hugo/</loc>
+    <loc>http://tweettir.com/tags/hugo/</loc>
     <lastmod>2015-08-03T13:39:46+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://boluihv.github.io/tags/ipsum/</loc>
+    <loc>http://tweettir.com/tags/ipsum/</loc>
     <lastmod>2015-10-10T13:07:31+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://boluihv.github.io/categories/lorem/</loc>
+    <loc>http://tweettir.com/categories/lorem/</loc>
     <lastmod>2015-10-10T13:07:31+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://boluihv.github.io/tags/programming/</loc>
+    <loc>http://tweettir.com/tags/programming/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://boluihv.github.io/categories/pseudo/</loc>
+    <loc>http://tweettir.com/categories/pseudo/</loc>
     <lastmod>2015-08-03T13:39:46+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://boluihv.github.io/service/</loc>
+    <loc>http://tweettir.com/service/</loc>
   </url>
   
   <url>
-    <loc>https://boluihv.github.io/categories/starting/</loc>
-    <lastmod>2015-06-24T13:50:46+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://boluihv.github.io/tags/</loc>
-    <lastmod>2015-08-03T13:39:46+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://boluihv.github.io/tags/theme/</loc>
+    <loc>http://tweettir.com/categories/starting/</loc>
     <lastmod>2015-06-24T13:50:46+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://boluihv.github.io/work/</loc>
+    <loc>http://tweettir.com/tags/</loc>
+    <lastmod>2015-08-03T13:39:46+02:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://boluihv.github.io/</loc>
+    <loc>http://tweettir.com/tags/theme/</loc>
+    <lastmod>2015-06-24T13:50:46+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://tweettir.com/work/</loc>
+  </url>
+  
+  <url>
+    <loc>http://tweettir.com/</loc>
     <lastmod>2015-10-10T13:07:31+02:00</lastmod>
     <priority>0</priority>
   </url>
