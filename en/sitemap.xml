@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://boluyurt.com/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://boluyurt.com/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://boluyurt.com/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://boluyurt.com/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://boluyurt.com/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://boluyurt.com/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://boluyurt.com/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://boluyurt.com/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://boluyurt.com/"
+                />
+  </url>
+  
+</urlset>
