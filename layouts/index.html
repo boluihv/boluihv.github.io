@@ -1,0 +1,256 @@
+{{ define "main" }}
+
+{{ $data := index site.Data site.Language.Lang }}
+
+<!-- banner -->
+{{ if $data.homepage.banner.enable }}
+{{ with $data.homepage.banner }}
+<section class="slider {{if .bg_overlay}}overly{{end}}" style="background-image: url('{{ .bg_image | absURL }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>{{ .title | markdownify }}</h1>
+          <p>{{ .content | markdownify }}</p>
+          {{ if .button.enable }}
+          {{ with .button }}
+          <a href="{{ .link | relLangURL }}" target="_blank" class="btn btn-main animated fadeInUp">{{ .label }}</a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /banner -->
+
+{{ if $data.homepage.about.enable }}
+{{ with $data.homepage.about }}
+<!-- about -->
+<section class="about section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-12">
+        <div class="block">
+          <div class="section-title">
+            <h2>{{ .title | markdownify }}</h2>
+            <p>{{ .description | markdownify }}</p>
+          </div>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-12">
+        <div class="block">
+          <img src="{{ .image | relURL }}" class="img-responsive" alt="Img">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about -->
+{{ end }}
+{{ end }}
+
+<!-- Call to action -->
+{{ if $data.homepage.cta.enable }}
+{{ partial "cta.html" . }}
+{{ end }}
+<!-- /Call to action -->
+
+
+<!-- Service -->
+{{ if $data.homepage.service.enable }}
+{{ partial "service.html" . }}
+{{ end }}
+<!-- /service -->
+
+{{ if $data.homepage.portfolio.enable }}
+{{ with $data.homepage.portfolio }}
+<!-- portfolio -->
+<section class="feature bg-2" style="background-image: url('{{ .bg_image | absURL}}')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-6">
+        <h2 class="section-subtitle">{{ .title | markdownify }}</h2>
+        {{ .content | markdownify }}
+        {{ if .button.enable }}
+        {{ with .button }}
+        <a href="{{ .link | relLangURL }}" class="btn btn-view-works">{{ .label }}</a>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /portfolio -->
+{{ end }}
+{{ end }}
+
+<div class="row">
+  <div style="padding-bottom:-40px; padding-top: 80px;" class="section-title">
+    <h2 style="display: flex; justify-content: center;">YURDUMUZDAN KARELER</h2>
+    <p style="display: flex; justify-content: center;">Bolu'da Huzurun Adresi</p>
+  </div>
+</div>
+
+{{ if $data.homepage.kare.enable }}
+{{ with $data.homepage.kare }}
+
+<section class="about section">
+  <div class="container">
+    <div class="row shuffle-wrapper">
+    <div style="padding-right:10px; padding-bottom: 5px;" class="col-md-4 portfolio-item shuffle-item">
+          <img style="max-width: 512px;  max-height: 512px;" class="img-responsive" src="{{ .image3 | relURL }}">
+          <div class="portfolio-hover">
+            <div class="portfolio-content">
+              <a href="{{ .Params.Image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
+              <a class="h3" href="{{ .Permalink }}">{{ .Title }}</a>
+            </div>
+          </div>
+      </div>
+      <div style="padding-right:10px; padding-bottom: 5px;" class="col-md-4 portfolio-item shuffle-item">
+        <img style="max-width: 512px;  max-height: 512px;" class="img-responsive" src="{{ .image4 | relURL }}">
+        <div class="portfolio-hover">
+          <div class="portfolio-content">
+            <a href="{{ .Params.Image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
+            <a class="h3" href="{{ .Permalink }}">{{ .Title }}</a>
+          </div>
+        </div>
+    </div>
+    <div style="padding-right:10px; padding-bottom: 5px;" class="col-md-4 portfolio-item shuffle-item">
+      <img style="max-width: 512px;  max-height: 512px;" class="img-responsive" src="{{ .image5 | relURL }}">
+      <div class="portfolio-hover">
+        <div class="portfolio-content">
+          <a href="{{ .Params.Image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
+          <a class="h3" href="{{ .Permalink }}">{{ .Title }}</a>
+        </div>
+      </div>
+    </div>
+    <div style="padding-right:10px; padding-bottom: 5px;" class="col-md-4 portfolio-item shuffle-item">
+      <img style="max-width: 512px;  max-height: 512px;" class="img-responsive" src="{{ .image1 | relURL }}">
+      <div class="portfolio-hover">
+        <div class="portfolio-content">
+          <a href="{{ .Params.Image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
+          <a class="h3" href="{{ .Permalink }}">{{ .Title }}</a>
+        </div>
+      </div>
+    </div>
+    <div style="padding-right:10px; padding-bottom: 5px;" class="col-md-4 portfolio-item shuffle-item">
+      <img style="max-width: 512px;  max-height: 512px;" class="img-responsive" src="{{ .image2 | relURL }}">
+      <div class="portfolio-hover">
+        <div class="portfolio-content">
+          <a href="{{ .Params.Image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
+          <a class="h3" href="{{ .Permalink }}">{{ .Title }}</a>
+        </div>
+      </div>
+    </div>
+    <div style="padding-right:10px; padding-bottom: 5px;" class="col-md-4 portfolio-item shuffle-item">
+      <img style="max-width: 512px;  max-height: 512px;" class="img-responsive" src="{{ .image7 | relURL }}">
+      <div class="portfolio-hover">
+        <div class="portfolio-content">
+          <a href="{{ .Params.Image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
+          <a class="h3" href="{{ .Permalink }}">{{ .Title }}</a>
+        </div>
+      </div>
+    </div>
+    <div style="padding-right:10px; padding-bottom: 5px;" class="col-md-4 portfolio-item shuffle-item">
+      <img style="max-width: 512px;  max-height: 512px;" class="img-responsive" src="{{ .image8 | relURL }}">
+      <div class="portfolio-hover">
+        <div class="portfolio-content">
+          <a href="{{ .Params.Image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
+          <a class="h3" href="{{ .Permalink }}">{{ .Title }}</a>
+        </div>
+      </div>
+    </div>
+    <div style="padding-right:10px; padding-bottom: 5px;" class="col-md-4 portfolio-item shuffle-item">
+      <img style="max-width: 512px;  max-height: 512px;" class="img-responsive" src="{{ .image9 | relURL }}">
+      <div class="portfolio-hover">
+        <div class="portfolio-content">
+          <a href="{{ .Params.Image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
+          <a class="h3" href="{{ .Permalink }}">{{ .Title }}</a>
+        </div>
+      </div>
+    </div>
+    <div style="padding-right:10px; padding-bottom: 5px;" class="col-md-4 portfolio-item shuffle-item">
+      <img style="max-width: 512px;  max-height: 512px;" class="img-responsive" src="{{ .image6 | relURL }}">
+      <div class="portfolio-hover">
+        <div class="portfolio-content">
+          <a href="{{ .Params.Image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
+          <a class="h3" href="{{ .Permalink }}">{{ .Title }}</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+<!-- Call to action -->
+{{ if $data.homepage.cta.enable }}
+{{ partial "cta.html" . }}
+{{ end }}
+<!-- /Call to action -->
+
+<section class="contact-form">
+  <div class="container">
+    <div class="row">
+      <form method="POST" action="{{ site.Params.contact_form_action | safeURL }}">
+        <div class="col-md-6 col-sm-12">
+          <div class="block">
+            <div class="form-group">
+              <input name="user_name" type="text" class="form-control" placeholder="İsim">
+            </div>
+            <div class="form-group">
+              <input name="user_email" type="text" class="form-control" placeholder="Mail Adresiniz">
+            </div>
+            <div class="form-group">
+              <input name="user_subject" type="text" class="form-control" placeholder="Konu">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="block">
+            <div class="form-group-2">
+              <textarea name="user_message" class="form-control" rows="4" placeholder="Mesajınız"></textarea>
+            </div>
+            <button class="btn btn-default" type="submit">{{ i18n "submit" }}</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="contact-box row">
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <h2>{{ i18n "address_title" }}</h2>
+          <ul class="address-block">
+            <li><i class="ion-ios-location-outline"></i>{{i18n "location"}}: {{ site.Params.location }}</li>
+            <li><i class="ion-ios-email-outline"></i>{{i18n "email"}}: {{ site.Params.email }}</li>
+            <li><i class="ion-ios-telephone-outline"></i>{{i18n "phone"}}: {{ site.Params.phone }}</li>
+          </ul>
+          <ul class="social-icons">
+            {{ range site.Params.social }}
+            <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+      {{ if site.Params.gmap.enable }}
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <div class="google-map">
+            <div class="map" id="map_canvas" data-latitude="{{ site.Params.gmap.map_latitude }}" data-longitude="{{ site.Params.gmap.map_longitude }}" data-marker="{{ site.Params.gmap.map_marker | relURL }}" data-marker-name="{{ site.Title }}"></div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+
+{{ end }}
+
